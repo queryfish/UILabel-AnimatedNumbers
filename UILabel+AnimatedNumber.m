@@ -8,24 +8,71 @@
 
 #import "UILabel+AnimatedNumber.h"
 
-@implementation UILabel_AnimatedNumber
+//@implementation UILabel (AnimatedNumber)
+//
+//-(void)animate:(id)sender
+//{
+//    self.number += self.step;
+//    if(self.number > self.target){
+//        self.text = [@(self.number) stringValue];
+//        [self.timer invalidate];
+////        [self.timer release];
+//    }
+//    else
+//        self.text = [@(self.number) stringValue];
+//    
+//}
+//
+//-(void)startAnimateTo:(int)i
+//{
+//    int cycles = 100;
+//    self.target = i;
+//    self.number = [self.text intValue];
+//    int span = i - self.number;
+//    self.step = span/cycles;
+//    
+//    self.timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(animate:) userInfo:nil repeats:YES];
+//    
+//}
+//
+//-(void)startAnimateToNumber:(NSNumber *)n
+//{
+//    [self startAnimateTo:[n intValue]];
+//}
+//
+//@end
 
-- (id)initWithFrame:(CGRect)frame
+@implementation AnimatedLabel
+
+@synthesize target, step, number, timer, initNumber;
+
+-(void)animate:(id)sender
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    NSLog(@"timer ticking");
+    self.initNumber += self.step;
+    if(self.initNumber > self.target){
+        self.text = [@(self.initNumber) stringValue];
+        [self.timer invalidate];
     }
-    return self;
+    else
+        self.text = [@(self.initNumber) stringValue];
+
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+-(void)startAnimateTo:(int)i
 {
-    // Drawing code
+    int cycles = 100;
+    self.target = i;
+    self.number = [self.text intValue];
+    int span = i - self.number;
+    self.step = 1;
+    self.text = [@(initNumber) stringValue];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:.010 target:self selector:@selector(animate:) userInfo:nil repeats:YES];
 }
-*/
+
+-(void)startAnimateToNumber:(NSNumber *)n
+{
+    [self startAnimateTo:[n intValue]];
+}
 
 @end

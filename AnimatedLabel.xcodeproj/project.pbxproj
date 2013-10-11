@@ -22,6 +22,7 @@
 		B055EB081802EC9B0030B454 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B055EAE71802EC9B0030B454 /* UIKit.framework */; };
 		B055EB101802EC9B0030B454 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B055EB0E1802EC9B0030B454 /* InfoPlist.strings */; };
 		B055EB121802EC9B0030B454 /* AnimatedLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B055EB111802EC9B0030B454 /* AnimatedLabelTests.m */; };
+		B055EB1D1802ECB60030B454 /* UILabel+AnimatedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B055EB1C1802ECB60030B454 /* UILabel+AnimatedNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		B055EB0D1802EC9B0030B454 /* AnimatedLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimatedLabelTests-Info.plist"; sourceTree = "<group>"; };
 		B055EB0F1802EC9B0030B454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B055EB111802EC9B0030B454 /* AnimatedLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedLabelTests.m; sourceTree = "<group>"; };
+		B055EB1B1802ECB60030B454 /* UILabel+AnimatedNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AnimatedNumber.h"; sourceTree = "<group>"; };
+		B055EB1C1802ECB60030B454 /* UILabel+AnimatedNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AnimatedNumber.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		B055EAD71802EC9B0030B454 = {
 			isa = PBXGroup;
 			children = (
+				B055EB1B1802ECB60030B454 /* UILabel+AnimatedNumber.h */,
+				B055EB1C1802ECB60030B454 /* UILabel+AnimatedNumber.m */,
 				B055EAE91802EC9B0030B454 /* AnimatedLabel */,
 				B055EB0B1802EC9B0030B454 /* AnimatedLabelTests */,
 				B055EAE21802EC9B0030B454 /* Frameworks */,
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B055EB1D1802ECB60030B454 /* UILabel+AnimatedNumber.m in Sources */,
 				B055EAFD1802EC9B0030B454 /* ViewController.m in Sources */,
 				B055EAF41802EC9B0030B454 /* AppDelegate.m in Sources */,
 				B055EAF01802EC9B0030B454 /* main.m in Sources */,
