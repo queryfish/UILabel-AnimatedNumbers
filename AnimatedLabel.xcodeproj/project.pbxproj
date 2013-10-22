@@ -23,6 +23,7 @@
 		B055EB101802EC9B0030B454 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B055EB0E1802EC9B0030B454 /* InfoPlist.strings */; };
 		B055EB121802EC9B0030B454 /* AnimatedLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B055EB111802EC9B0030B454 /* AnimatedLabelTests.m */; };
 		B055EB1D1802ECB60030B454 /* UILabel+AnimatedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B055EB1C1802ECB60030B454 /* UILabel+AnimatedNumber.m */; };
+		B0E012DD1816CA1F00DBC7A4 /* NSObject+AutoJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E012DC1816CA1F00DBC7A4 /* NSObject+AutoJSONSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		B055EB111802EC9B0030B454 /* AnimatedLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedLabelTests.m; sourceTree = "<group>"; };
 		B055EB1B1802ECB60030B454 /* UILabel+AnimatedNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AnimatedNumber.h"; sourceTree = "<group>"; };
 		B055EB1C1802ECB60030B454 /* UILabel+AnimatedNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AnimatedNumber.m"; sourceTree = "<group>"; };
+		B0E012DB1816CA1F00DBC7A4 /* NSObject+AutoJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoJSONSerialization.h"; sourceTree = "<group>"; };
+		B0E012DC1816CA1F00DBC7A4 /* NSObject+AutoJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoJSONSerialization.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 			children = (
 				B055EAF21802EC9B0030B454 /* AppDelegate.h */,
 				B055EAF31802EC9B0030B454 /* AppDelegate.m */,
+				B0E012DB1816CA1F00DBC7A4 /* NSObject+AutoJSONSerialization.h */,
+				B0E012DC1816CA1F00DBC7A4 /* NSObject+AutoJSONSerialization.m */,
 				B055EAF51802EC9B0030B454 /* Main_iPhone.storyboard */,
 				B055EAF81802EC9B0030B454 /* Main_iPad.storyboard */,
 				B055EAFB1802EC9B0030B454 /* ViewController.h */,
@@ -261,6 +266,7 @@
 				B055EB1D1802ECB60030B454 /* UILabel+AnimatedNumber.m in Sources */,
 				B055EAFD1802EC9B0030B454 /* ViewController.m in Sources */,
 				B055EAF41802EC9B0030B454 /* AppDelegate.m in Sources */,
+				B0E012DD1816CA1F00DBC7A4 /* NSObject+AutoJSONSerialization.m in Sources */,
 				B055EAF01802EC9B0030B454 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +486,7 @@
 				B055EB171802EC9B0030B454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B055EB181802EC9B0030B454 /* Build configuration list for PBXNativeTarget "AnimatedLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +495,7 @@
 				B055EB1A1802EC9B0030B454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
